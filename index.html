@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Share</title>
+	<link href="dist/share-this.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>Selecione o texto abaixo</h1>
+	<article>Cras at augue vel sapien hendrerit vehicula ac a dui. Nam id lorem eleifend, venenatis libero rutrum, condimentum turpis. Vivamus iaculis interdum scelerisque. Pellentesque consectetur elit sit amet libero ultrices scelerisque. Praesent tincidunt pretium turpis, a sodales nulla pellentesque a. Etiam porttitor fringilla risus ac maximus. Donec eget rhoncus sapien. Etiam placerat rutrum ornare. Maecenas elementum eros lorem, sed feugiat massa sagittis quis. Duis nec odio consectetur, maximus quam condimentum, auctor odio. Ut id tempor sem. Aliquam ex augue, blandit et sapien scelerisque, pellentesque efficitur felis. Sed volutpat lobortis urna quis fermentum.
+	</article>
+	<script src="dist/share-this.js"></script>
+	<script src="dist/all.js"></script>
+	<!-- <script src="dist/sharers/email.js"></script>
+	<script src="dist/sharers/facebook.js"></script>
+	<script src="dist/sharers/linked-in.js"></script>
+	<script src="dist/sharers/reddit.js"></script>
+	<script src="dist/sharers/twitter.js"></script> -->
+	<script>
+		ShareThis({
+		    sharers: [ ShareThisViaTwitter, ShareThisViaFacebook, ShareThisViaReddit, ShareThisViaLinkedIn, ShareThisViaEmail ],
+		    selector: "article"
+		}).init();
+	</script>
+</body>
+</html>
